@@ -176,7 +176,7 @@ div.csl-indent {
   <li><a href="#quasi-experimental-designs" id="toc-quasi-experimental-designs" class="nav-link" data-scroll-target="#quasi-experimental-designs">Quasi-experimental designs</a>
   <ul class="collapse">
   <li><a href="#the-nonequivalent-control-group-design" id="toc-the-nonequivalent-control-group-design" class="nav-link" data-scroll-target="#the-nonequivalent-control-group-design">The Nonequivalent Control Group Design</a></li>
-  <li><a href="#time-series" id="toc-time-series" class="nav-link" data-scroll-target="#time-series">Time series</a></li>
+  <li><a href="#time-series-designs" id="toc-time-series-designs" class="nav-link" data-scroll-target="#time-series-designs">Time series designs</a></li>
   </ul></li>
   <li><a href="#how-to-do-a-program-evaluation-using-a-quasi-experimental-design" id="toc-how-to-do-a-program-evaluation-using-a-quasi-experimental-design" class="nav-link" data-scroll-target="#how-to-do-a-program-evaluation-using-a-quasi-experimental-design">How to do a program evaluation using a quasi-experimental design</a></li>
   <li><a href="#recommended-further-reading" id="toc-recommended-further-reading" class="nav-link" data-scroll-target="#recommended-further-reading">Recommended further reading</a></li>
@@ -314,10 +314,13 @@ div.csl-indent {
 <p>Statistical regression is a valid criticism any time students are selected for a treatment on the basis of extreme scores, because extremely low or high pretest scores will always, on average, regress to the mean on any retest. This should be less of a problem if both groups were selected on the same set of extreme pretest scores.</p>
 <p>Interactions between pretesting, selection, maturation, and the experimental treatment mean the students selected for the treatment were aware of their selection and reacted to it. This could be a valid threat whenever students selected for a program become aware of it, especially by virtue of contact with comparison students.</p>
 </section>
-<section id="time-series" class="level3">
-<h3 class="anchored" data-anchor-id="time-series">Time series</h3>
-<p>A time-series design is, essentially, “the presence of a periodic measurement process on some group or individual and the introduction of an experimental change into this time series of measurements, the results of which are indicated by a discontinuity in the measurements recorded in the time series” (<span class="citation" data-cites="CampbellStanley-1963">Campbell and Stanley (<a href="references.html#ref-CampbellStanley-1963" role="doc-biblioref">1963</a>)</span>, 37).</p>
-<p>The design looks like this:</p>
+<section id="time-series-designs" class="level3">
+<h3 class="anchored" data-anchor-id="time-series-designs">Time series designs</h3>
+<p>A time series design is, essentially, “the presence of a periodic measurement process on some group or individual and the introduction of an experimental change into this time series of measurements, the results of which are indicated by a discontinuity in the measurements recorded in the time series” (<span class="citation" data-cites="CampbellStanley-1963">Campbell and Stanley (<a href="references.html#ref-CampbellStanley-1963" role="doc-biblioref">1963</a>)</span>, 37).</p>
+<p>One familiar application of this design might be annual trends in proficiency rates (or average scores) for a grade level at a school.</p>
+<section id="one-group-design" class="level4">
+<h4 class="anchored" data-anchor-id="one-group-design"><strong>One group design</strong></h4>
+<p>A time series design for one group looks like this…</p>
 <table class="table">
 <tbody>
 <tr class="odd">
@@ -333,15 +336,49 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>Consider, for example, trends annual grade level proficency on the state test for schools in a district. A simple line graph of eight years of results might look something like this:</p>
+<p>…and a simple line graph of eight years of results with an intervention between Time 4 and 5 might look like this:</p>
+<p><img src="assets/time-series-one.png" class="img-fluid"></p>
+<p>What’s going on here? What do we make of these results?</p>
+<p>Advocates of the intervention will hail the improvement in scores as evidence of effectiveness.</p>
+<p>Are we convinced? What might be some credible threats to validity?</p>
+<p>Unless the case is somewhat isolated, this design may be vulnerable to <strong>history</strong> as a rival explanation. An external event could have caused the observed increase.</p>
+</section>
+<section id="multiple-group-design" class="level4">
+<h4 class="anchored" data-anchor-id="multiple-group-design"><strong>Multiple-group design</strong></h4>
+<p>A multiple-group design, as you might imagine, adds groups to the design, like this:</p>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">O<sub>1</sub></td>
+<td style="text-align: center;">O<sub>2</sub></td>
+<td style="text-align: center;">O<sub>3</sub></td>
+<td style="text-align: center;">O<sub>4</sub></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">O<sub>5</sub></td>
+<td style="text-align: center;">O<sub>6</sub></td>
+<td style="text-align: center;">O<sub>7</sub></td>
+<td style="text-align: center;">O<sub>8</sub></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">O<sub>1</sub></td>
+<td style="text-align: center;">O<sub>2</sub></td>
+<td style="text-align: center;">O<sub>3</sub></td>
+<td style="text-align: center;">O<sub>4</sub></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">O<sub>5</sub></td>
+<td style="text-align: center;">O<sub>6</sub></td>
+<td style="text-align: center;">O<sub>7</sub></td>
+<td style="text-align: center;">O<sub>8</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Imagine six groups, all with the same time series of observations. A line graph of their results might look like this:</p>
 <p><img src="assets/time-series.png" class="img-fluid"></p>
-<p>Seldom do we have so much longitudinal data. More often we have maybe a few years of data, say O<sub>4</sub> and O<sub>5</sub>, or Time 4 and Time 5, which is essentially the Nonequivalent Control Groups Design. In those cases, improvements in scores fall prey to many of the threats to validity outlined above.</p>
-<p>What does a time series enable us to see?</p>
 <p>Improvements since the intervention might look like evidence of the intervention’s effectiveness. A larger set of pre-intervention data provides context. In cases that were already improving before the intervention it is more difficult to attribute the improvement to the intervention.</p>
-<p>Unless the case is somewhat isolated, this design may be vulnerable to <strong>history</strong> as a rival explanation insofar as some other historical factor produced the improvement.</p>
-<p>The design does, however, help overcome the other confounds. <strong>Maturation</strong> would not seem a credible rival explanation in Cases A and B.</p>
 <p>School-level trends in annual aggregate test scores are messy. A school implementing an intervention might be to find schools with comparable demographics to use as controls. But those schools might be doing their own interventions.</p>
 <p>Add to this the challenge of sensitivity to instruction.</p>
+<p>Seldom do we have so much longitudinal data. More often we have maybe a few years of data, say O<sub>4</sub> and O<sub>5</sub>, or Time 4 and Time 5, which is essentially the Nonequivalent Control Groups Design. In those cases, improvements in scores fall prey to many of the threats to validity outlined above. A time series provides more context and more follow-up.</p>
+</section>
 </section>
 </section>
 <section id="how-to-do-a-program-evaluation-using-a-quasi-experimental-design" class="level2">
